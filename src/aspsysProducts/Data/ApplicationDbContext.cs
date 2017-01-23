@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using aspsysProducts.Models;
+using aspsysProducts.Models.Products;
 
 namespace aspsysProducts.Data
 {
@@ -22,5 +23,7 @@ namespace aspsysProducts.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<Products> Products { get; set; }
     }
 }

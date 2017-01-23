@@ -1,0 +1,17 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Filter";
+}
+
+<h2>Product List</h2>
+
+<div>
+    <h4>Filtered Search Results</h4>
+</div>
+
+<ul>
+    <li>@ViewData["Category"]</li>
+    <li>@ViewData["Manufacturer"]</li>
+    <li>@ViewData["Min_price"]</li>
+    <li>@ViewData["Max_price"]</li>
+</ul>
